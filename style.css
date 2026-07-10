@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+    /*navbar css start*/
+.navbar{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: white;
+}
+.logo img{
+    background-color:white;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #4d4747;
+    padding:20px;
+    font-size: 18px;
+    background-color: white;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ /*navbar css end*/
+
+ /*banner start*/
+
+.main-hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-image: url('./assets/banner.jpg');
+    background-position: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 670px;
+    padding: 20px;
+}
+
+.hero-content h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-style: italic;
+    
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 170px;
+}
+
+.registration-btn-2{
+    padding: 20px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+ /*banner end*/
+
+
+  /*meet the spekers start*/
+.meet-the-speakers{
+    padding: 50px 60px;
+    display: flex;
+
+}
+
+.meet-the-speakers img{
+    display: grid;
+    width: 150px;
+}
+
+.meet-the-speakers h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: grid;
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow: hidden;
+
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.content{
+    padding:25px;
+}
+
+.content span{
+    color:#2563eb;
+    font-size:14px;
+}
+
+.content h3{
+margin:10px 0;
+}
+
+/*meet the spekers end*/ 
+
+.pricing{
+    padding:80px 8%;
+    background:#f5f7fb;
+}
+
+.pricing h2{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:40px;
+}
+
+.price-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.price-card{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.featured{
+    background:#0f172a;
+    color:white;
+}
+
+.price-card h1{
+    margin:20px 0;
+    font-size:50px;
+}
+
+.price-card button{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
