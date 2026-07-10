@@ -18,11 +18,11 @@
     background-color:white;
     
 }
-ul{
+.navbar ul{
     display: flex;
     list-style: none;
 }
-ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #4d4747;
     padding:20px;
@@ -97,8 +97,9 @@ button{
   /*meet the spekers start*/
 .meet-the-speakers{
     padding: 50px 60px;
-    display: flex;
-
+    display: grid;
+    grid: 10px;
+    
 }
 
 .meet-the-speakers img{
@@ -110,11 +111,14 @@ button{
     text-align: center;
     font-size: 48px;
     margin-bottom: 50px;
+    
 }
 
 .cards{
+
     display: grid;
-    gap:30px;
+    gap:20px;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .card{
@@ -126,7 +130,6 @@ button{
 
 .card img{
     width:100%;
-    height:250px;
     object-fit:cover;
 }
 
@@ -145,48 +148,246 @@ margin:10px 0;
 
 /*meet the spekers end*/ 
 
+/*pricing*/
+
+.pricing-section{
+    padding: 20px 10%;
+    text-align: left;
+    background-color: white;
+    grid-template-columns: 1fr;
+}
+
+.pricing-section h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pricing-section p{
+    font-size: 15px;
+    text-align: center;
+    color: #4d4747;
+    margin: 15px 0 40px;
+}
+
 .pricing{
-    padding:80px 8%;
-    background:#f5f7fb;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    width: 350px;
+    height: 450px;
+    background-color: hsl(0, 0%, 97%);
+       
 }
 
-.pricing h2{
+.pricing h2{ 
+    margin: 10px 10px;
+    text-transform: uppercase;
+    color: rgb(180, 177, 177);
+    font-size: 18px;
+}
+.pricing h1{
+    margin: 10px 10px;
+    text-align: left;
+}
+
+.pricing h3{
+    font-size: 15px;
+    color: rgb(180, 177, 177);
+    margin: 10px 10px;
+    
+    
+}
+
+.pricing ul{
+    margin-left: 25px;
+    list-style-type: disc;
+    text-align: left;
+    
+}
+
+.pricing-pro ul li::marker{
+    color: #2563eb;
+    
+}
+
+.pricing ul li{
+    margin:20px 0px;    
+}
+
+
+.get-st{
+    margin-top: 20px;
+    margin-left: 90px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(52, 52, 248);
+    border:1px solid rgb(52, 52, 248);
+
+}
+
+
+/*Pro pricing*/
+
+.pricing-pro{
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    width: 350px;
+    height: 450px;
+    background-color: hwb(0 0% 100%);
+        
+}
+
+.pricing-pro h2{ 
+    margin: 10px 10px;
+    text-transform: uppercase;
+    color: rgb(180, 177, 177);
+    font-size: 18px;
+}
+.pricing-pro h1{
+    margin: 10px 10px;
+    text-align: left;
+    color: white;
+}
+
+.pricing-pro h3{
+    font-size: 15px;
+    color: rgb(180, 177, 177);
+    margin: 10px 10px;
+    
+}
+
+.pricing-pro ul{
+    margin-left: 25px;
+    list-style-type: disc;
+    text-align: left;
+    color: white;
+}
+
+.pricing-pro ul li{
+    margin:20px 0px;    
+}
+
+.pricing-pro ul li::marker{
+    color: #2563eb;
+    
+}
+.get-pro-btn{
+    margin-top: 20px;
+    margin-left: 55px;
+    background-color: #2563eb;
+    color: white;
+    border:1px solid rgb(52, 52, 248);
+    padding: 10px 80px;
+
+}
+
+/*contact us pricing*/
+
+.ctct-btn{
+    margin-top: 10px;
+    margin-left: 85px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(52, 52, 248);
+    border:1px solid rgb(52, 52, 248);
+    padding: 15px 40px;
+
+}
+
+.pricing-parent{
+    margin-left:8%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/* Sponsors Section */
+
+.sponsors{
+    padding:80px 10%;
+    background:#f8fafc;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
     text-align:center;
-    font-size:48px;
-    margin-bottom:40px;
+    margin-bottom:60px;
 }
 
-.price-grid{
+.section-title h2{
+    font-size:40px;
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#64748b;
+    font-size:17px;
+    max-width:650px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.sponsor-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(3,1fr);
     gap:30px;
 }
 
-.price-card{
-    background:white;
-    padding:40px;
+.sponsor-card{
+    background:#fff;
     border-radius:15px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    padding:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.featured{
-    background:#0f172a;
-    color:white;
+
+
+.sponsor-card img{
+    width:140px;
+    max-width:100%;
+    
 }
 
-.price-card h1{
-    margin:20px 0;
-    font-size:50px;
+
+/*footer*/
+
+.footer{
+    background-color: #111827;
+    color: #ffffff;
+    padding: 20px 20px;
+    height: 30px;
 }
 
-.price-card button{
-    margin-top:25px;
-    padding:15px 35px;
-    border:none;
-    background:#2563eb;
-    color:white;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
+
+
+.copyright{
+    background-color: #0f172a;
+    color: #d1d5db;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
 }
+
+.footer-logo-left{
+    float: left;
+    margin-left: 30px;;
+}
+
+.social-right{
+    float: right;
+    margin-right: 50px;
+    
+}
+
+.social-right a i{
+    width: 30px;
+    height: 50px;
+}
+
+
