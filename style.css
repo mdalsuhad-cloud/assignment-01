@@ -31,21 +31,22 @@
 }
 
 button{
-    padding: 10px 20px;
     background-color: blue;
     color: white;
     border: none;
-    border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
  /*navbar css end*/
 
- /*banner start*/
+ /*main hero (Banner) start*/
 
 .main-hero{
-    height: 100vh;
+    height: 950px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,16 +62,16 @@ button{
     align-items: center;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    max-width: 670px;
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: 740px;
     padding: 20px;
 }
 
 .hero-content h1{
     font-size: 70px;
     margin-bottom: 20px;
-    font-style: italic;
-    
+    display: inline-block;
+    font-weight: bold;
 }
 
 .hero-content p{
@@ -79,12 +80,13 @@ button{
 }
 
 .registration-btn-2{
-    padding: 20px 25px;
+   
     background-color: blue;
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 22px;
+    padding: 20px 25px;
     font-weight: bold;
     margin-top: 20px;
     letter-spacing: 1px;
@@ -151,7 +153,7 @@ margin:10px 0;
 /*pricing*/
 
 .pricing-section{
-    padding: 20px 10%;
+    padding: 20px;
     text-align: left;
     background-color: white;
     grid-template-columns: 1fr;
@@ -275,7 +277,7 @@ margin:10px 0;
     margin-left: 55px;
     background-color: #2563eb;
     color: white;
-    border:1px solid rgb(52, 52, 248);
+    border:1px solid #ffff;
     padding: 10px 80px;
 
 }
@@ -300,7 +302,7 @@ margin:10px 0;
     margin-top: 30px;
 }
 
-/* Sponsors Section */
+/* Sponsors Section Chatgpt*/
 
 .sponsors{
     padding:80px 10%;
@@ -347,7 +349,6 @@ margin:10px 0;
 }
 
 
-
 .sponsor-card img{
     width:140px;
     max-width:100%;
@@ -361,30 +362,26 @@ margin:10px 0;
     background-color: #111827;
     color: #ffffff;
     padding: 20px 20px;
-    height: 30px;
 }
 
-
-.footer-logo-left{
-    float: left;
-    margin-left: 30px;;
-}
-
-.social-right{
-    float: right;
-    margin-right: 50px;
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
     
 }
 
-.social-right a i{
-    width: 30px;
-    height: 50px;
+.social-icon a i {
+    background-color: rgb(250, 246, 246);
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    margin-top: 2px;
 }
 
-.flw-link{
-    float: ;
-    margin-left: 50px;
-}
+        /*copy right*/
 
 .copyright{
     background-color: #0f172a;
@@ -396,5 +393,10 @@ margin:10px 0;
 
 .copyright a{
     color: white;
-    text-decoration: none
+    text-decoration: none;
+}
+
+.copyright a:hover{
+    color: white;
+    text-decoration: underline;
 }
