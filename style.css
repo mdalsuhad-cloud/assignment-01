@@ -365,15 +365,6 @@ margin:10px 0;
 }
 
 
-
-.copyright{
-    background-color: #0f172a;
-    color: #d1d5db;
-    text-align: center;
-    padding: 5px;
-    font-size: 15px;
-}
-
 .footer-logo-left{
     float: left;
     margin-left: 30px;;
@@ -390,4 +381,20 @@ margin:10px 0;
     height: 50px;
 }
 
+.flw-link{
+    float: ;
+    margin-left: 50px;
+}
 
+.copyright{
+    background-color: #0f172a;
+    color: #d1d5db;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: none
+}
